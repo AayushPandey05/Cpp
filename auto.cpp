@@ -1,0 +1,13 @@
+//*TODO: Using auto assign data type....
+#include<typeinfo> //!..to use ["typeid"]...
+#include<iostream>
+using namespace std;
+int main()
+{
+    auto a = 10;  //!..it is lateral
+    auto b = 3.14; //!..it is also lateral
+    cout<<a<<"\n"<<b<<"\n";
+    cout<<typeid(a).name()<<"\n";  //**it will give i (i.e integer}...
+    cout<<typeid(b).name();  //**it will give d (i.e double)...
+    return 0;
+}
